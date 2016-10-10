@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget>
+    <author href="https://build.phonegap.com" email="m3.punkrockrebel@gmail.com">
+        Craig Berry
+    </author>
+    <name>Roller Derby</name>
+    <icon src="ico.jpg" platform="android"></icon>
+</widget>

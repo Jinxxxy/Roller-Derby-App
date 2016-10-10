@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <title>Roller Derby Test</title>
+        
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <link rel="stylesheet" href="RollerDerby.css" />
+    </head>    
+<body>
+    <div id="statusTable">
+
+    </div>
+    <h1 id="header">Derby Swap</h1>
+    <div id="buttonHolder">
+        <div id="buttonContainer">
+    </div><div id="jammerButton" class="buttonStyle">Jammers</div>     <div id="blockerAbutton" class="buttonStyle">Blockers A</div>     <div id="blockerBbutton" class="buttonStyle">Blockers B</div></div>
+    
+    <div id="jammersstyle" class="tableDiv">
+        <div id="innerJammerButton" class="buttonStyle">Jammers</div><div class="nameChangeDiv"><input type="text" id="jammernamechange" placeholder="Change Team Name?" /></div><br>
+        <table id="inputTableC" class="tableStyle">
+            <tr><th>Name</th><th></th></tr>
+            <tr><td><input type="text" id="nameC" /></td><td><input type="button" class="inputStyle" id="addPlayerC" value="Add player" /></td></tr>
+        </table>
+        <hr />
+        <table id="switchingTableC" class="tableStyle">
+            <tbody id="tableParentC">
+                <tr><th>ID</th><th>Name</th><th>Switch?</th><th>Remove?</th></tr>
+            </tbody>
+        </table>
+        BINNED!
+        <table id="holdingTableC" class="tableStyle">
+            <tbody id="holdingParentC"></tbody>
+        </table>
+    </div>
+
+    <div id="blockersAstyle" class="tableDiv">
+        <div id="innerBlockerAButton" class="buttonStyle"> Blockers - A </div><div class="nameChangeDiv"><input type="text" id="blockerAnamechange" placeholder="Change Team Name?" /></div><br>
+        <table id="inputTableA" class="tableStyle">
+            <tr><th>Name</th><th></th></tr>
+            <tr><td><input type="text" id="nameA" /></td><td><input type="button" id="addPlayerA" class="inputStyle" value="Add player" /></td></tr>
+        </table>
+        <hr />
+        <table id="switchingTableA" class="tableStyle">
+            <tbody id="tableParentA">
+                <tr><th>ID</th><th>Name</th><th>Switch?</th><th>Remove?</th></tr>
+            </tbody>
+        </table>
+
+        BINNED!
+        <table id="holdingTableA" class="tableStyle">
+            <tbody id="holdingParentA"></tbody>
+        </table>
+    </div>
+    <div id="blockersBstyle" class="tableDiv">
+        <div id="innerBlockerBButton" class="buttonStyle">Blockers - B</div><div class="nameChangeDiv"><input type="text" id="blockerBnamechange" placeholder="Change Team Name?" /></div><br>
+        <table id="inputTableB" class="tableStyle">
+            <tr><th>Name</th><th></th></tr>
+            <tr><td><input type="text" id="nameB" /></td><td><input type="button" class="inputStyle" id="addPlayerB" value="Add player" /></td></tr>
+        </table>
+        <hr />
+        <table id="switchingTableB" class="tableStyle">
+            <tbody id="tableParentB">
+                <tr><th>ID</th><th>Name</th><th>Switch?</th><th>Remove?</th></tr>
+            </tbody>
+        </table>
+        BINNED!
+        <table id="holdingTableB" class="tableStyle">
+            <tbody id="holdingParentB"></tbody>
+        </table>
+    </div>    
+    <div id="timerArea" class="tableDiv">
+        <div class="buttonStyle" id="timerHeading">TIMER</div><br>
+        <input type="number" id="timerMinutes" placeholder="minutes" min="0" />
+        <input type="number" id="timerSeconds" placeholder="seconds" min="0" max="59" /><br /><br>
+        <input type="button" class="inputStyle" id="startTimer" value="START CLOCK" />
+        <input type="button" class="inputStyle" id="pauseTimer" value="Pause" />
+        <input type="button" class="inputStyle" id="resetTimer" value="Reset" />
+        <br /><br>
+        <div id="timer"><div class="inputStyle" id="timeOutput">--:--:--</div></div>
+    </div>
+    <br />
+    <div id="diagnosticsArea">
+        <table id="statTable">
+            <tr>
+                <th>Name</th><th>Subbed</th><th>Binned</th>
+            </tr>
+        </table>
+    </div>
+	<br>
+    <script type="text/javascript" src="RollerDerby.js"></script>
+</body>
+</html>

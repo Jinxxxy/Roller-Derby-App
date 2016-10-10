@@ -1,0 +1,129 @@
+﻿body
+{
+    background-color: lightpink;
+    color:cornsilk black;
+    font-family:'Comic Sans MS';
+    font-size:225%;    
+    width: 100vw;
+    height: 100vh;
+}
+.nameChangeDiv{
+    margin: 0 auto;   
+    position: relative; 
+    display: inline-block;   
+}
+#header{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px dashed deeppink;
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+}
+.tableDiv{
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px #888888;
+    background-color: deeppink;
+    display:inline-grid;
+    margin: 0 auto;
+    clear: both;    
+}
+#buttonHolder{    
+    width: 47%;
+    padding: 2.5%; 
+    margin: 0 auto;         
+}
+
+table, th, td{
+    border: 1px black solid;
+    border-radius:5%;    
+    background-color: pink;
+    width: 85%;
+}
+table{
+    box-shadow: 5px 5px 5px #888888;
+}
+
+input{
+	background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 100%;
+    padding: 5px;
+}
+
+td{
+    font-size: 0.8em;
+}
+.tableStyle{
+    margin: 0 auto;    
+}
+#jammersstyle{   
+    width: 80%;    
+}
+.buttonStyle{
+    font-size: 85%;
+    display: block;
+    border: 2px dashed deeppink;
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+    padding-right: 2.5%;
+    margin: 0 auto;
+    text-align:center;    
+    word-break: break-all;       
+}
+#jammerButton{
+
+}
+#minuteOutput, #secondsOutput, #millisecondsOutput{
+    width: 7.5%;
+    top: 5%;
+    display:inline-flex;
+    margin: 0 auto;
+    font-size:x-large;    
+}
+
+.inputStyle{
+    background-color: white;
+    color: black;
+    font-weight:700;
+    font-family: 'Comic Sans MS';
+    border: 1px dashed deeppink;
+    height: 50px;
+}
+#jammerButton{
+    border: 2px dashed white;
+    background-color: deeppink;
+}
+#blockersAstyle{
+    display:inline-grid;
+    width: 80%;
+    margin: 0 auto;
+    display: none;    
+}
+#blockersBstyle{
+    display:none;
+    width: 80%;
+    margin: 0 auto;    
+}
+#timerArea{
+    display: inline-grid;
+    width: 80%;
+    margin: 0 auto;   
+    margin-top: 10px;     
+}
+#statTable{
+    margin: 0 auto;
+    display: none;
+	border-radius: 0;
+}
+#statusTable{
+	width: 100%;
+	display: none;
+	position: fixed;
+	background-color: black;
+	color: white;
+	border: 2px solid deeppink;
+	text-align: center;
+}
